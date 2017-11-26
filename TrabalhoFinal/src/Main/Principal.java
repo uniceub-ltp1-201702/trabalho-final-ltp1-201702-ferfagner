@@ -12,7 +12,10 @@ public class Principal {
 	
 	public static void main(String[] args) {
 		
-		ControleMenu cm = new ControleMenu();
+		BD bds = new BD();
+				
+		ControleMenu cm = new ControleMenu(bds);
 	}
 
 }
+

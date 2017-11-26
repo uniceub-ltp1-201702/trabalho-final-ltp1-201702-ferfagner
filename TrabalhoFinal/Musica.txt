@@ -1,2 +1,6 @@
-Bang#Bang
-Rebeca#Black
+Bang;Bang;teste
+Rebeca;Black;teste
+bang;sertanejo;fagner
+teste;teste;fagner
+bang;bang;fagner
+bag;bag;fagner

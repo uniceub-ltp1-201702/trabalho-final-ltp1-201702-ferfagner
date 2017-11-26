@@ -1,5 +1,7 @@
 package Control;
 
+import javax.swing.JOptionPane;
+
 import Model.Artista;
 import Model.BD;
 import View.ViewCadastraArtista;
@@ -16,11 +18,18 @@ public class ControleCadastrarArtista {
 		ViewCadastraArtista vca =  new ViewCadastraArtista();
 		vca.cadastraArtista();
 		Artista a = new Artista(vca.getNome(), Integer.parseInt(vca.getIdade()));
-	this.bds.gravarArtista(a);
+	if (bds.testaArtistaExiste(a)) {
+		JOptionPane.showMessageDialog(null, "Artista ja cadastrado");
+	}else {
+		bds.gravarArtista(a);
+		JOptionPane.showMessageDialog(null, "o Artista Foi cadastrado");
+	}
+	
+	}
+	
 	
 	
 	}
 	
 	
-	}
 
