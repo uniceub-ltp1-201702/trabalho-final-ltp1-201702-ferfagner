@@ -28,7 +28,7 @@ public class ControleBuscarMusicaPorPalavra {
 		
 		String nome = vsp.getNome().toUpperCase();
 		
-		String a = "Palavra Pesquisada: " + nome + "\n";
+		String a = "";
 
 		for (int i = 0; i < musicas.size(); i++) {
 			if (musicas.get(i).getNomeMusica().toUpperCase().contains(nome)) {
@@ -36,9 +36,6 @@ public class ControleBuscarMusicaPorPalavra {
 					"Genero: " + musicas.get(i).getGenero() + "\n "+
 					"Artista: " + musicas.get(i).getArtista()+ "\n "+
 					"\n " + "--------------------" + "\n";
-			}else {
-				JOptionPane.showMessageDialog(null, "Palavra Não Encontrada");
-				break;
 			}
 		}
 		ViewExibirMusica vem = new ViewExibirMusica(a);
