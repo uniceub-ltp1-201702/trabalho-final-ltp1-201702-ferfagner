@@ -2,12 +2,12 @@ package View;
 
 import javax.swing.JOptionPane;
 
-public class ViewExibirMusica {
+public class ViewExibeMusicasArtista {
 	
-	public ViewExibirMusica(String musicas){
+	public ViewExibeMusicasArtista(String musicas){
 		
 		if (musicas == "") {
-			JOptionPane.showMessageDialog(null, "Musicas não Cadastradas");
+			JOptionPane.showMessageDialog(null, "Artista não Encontrado");
 		} else {
 			JOptionPane.showMessageDialog(null, musicas);
 			

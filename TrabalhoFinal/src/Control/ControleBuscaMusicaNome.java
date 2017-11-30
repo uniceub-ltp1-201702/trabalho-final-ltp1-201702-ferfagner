@@ -2,6 +2,8 @@ package Control;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 import Model.BD;
 import Model.Musica;
 import View.ViewExibirMusica;
@@ -23,13 +25,14 @@ public class ControleBuscaMusicaNome {
 			
 			String nomeMusica = vsm.getNomeMusica();
 			
-			String nm = "---" + nomeMusica + "---\n";
+			String nm = "";
 			for (int i = 0; i < musicas.size(); i++) {
 				if(musicas.get(i).getNomeMusica().equals(nomeMusica)){
-					nm  += "-------------------\n" + 
-							musicas.get(i).getNomeMusica() + "\n" + 
-							musicas.get(i).getGenero() + "\n" +
-							musicas.get(i).getArtista() + "\n";
+					nm  +="Pesquisa: " + nomeMusica + "\n"
+							+"----------------------------------\n" + 
+							"Musica: " + musicas.get(i).getNomeMusica() + "\n" + 
+							"Genero: " +musicas.get(i).getGenero() + "\n" +
+							"Artista: " +musicas.get(i).getArtista() + "\n";
 				}
 			}
 			ViewExibirMusica vem = new ViewExibirMusica(nm);

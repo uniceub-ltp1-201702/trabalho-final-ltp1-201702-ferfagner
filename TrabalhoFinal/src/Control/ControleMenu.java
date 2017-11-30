@@ -14,7 +14,7 @@ public class ControleMenu {
 	private ControleCadastraMusica ccm;
 	private ControleCadastrarArtista cca;
 	private ControleBuscaMusicaNome cbmn;
-	private ControleBuscarMusica cbm;
+	private ControleBuscarMusicaPorPalavra cbmpp;
 	private ControleBuscarMusicaArtista cbma;
 	
 		public ControleMenu(BD bds) {
@@ -23,7 +23,7 @@ public class ControleMenu {
 			this.vm = new ViewMenu();
 			this.cca = new ControleCadastrarArtista(bds);
 			this.ccm = new ControleCadastraMusica(bds);
-			this.cbm = new ControleBuscarMusica();
+			this.cbmpp = new ControleBuscarMusicaPorPalavra(bds);
 			this.cbma = new ControleBuscarMusicaArtista(bds);
 			this.cbmn = new ControleBuscaMusicaNome(bds);
 			
@@ -41,7 +41,7 @@ public class ControleMenu {
 				break;
 				case "4": this.cbma.exeibirNomeArtista();
 				break;
-				case "5": this.cbm.buscarPorLetra();
+				case "5": this.cbmpp.buscaMusicaporPalavra();
 				break;
 				case "6": JOptionPane.showMessageDialog(null, "Sair"); 
 				return;

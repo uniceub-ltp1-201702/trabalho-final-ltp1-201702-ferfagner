@@ -1,6 +1,8 @@
-Bang;Bang;teste
-Rebeca;Black;teste
-bang;sertanejo;fagner
-teste;teste;fagner
-bang;bang;fagner
-bag;bag;fagner
+Down Town;Funk;Anitta
+Voa Beija-flor;Sertanejo;Jorge e Matheus
+Bleckout;Sertanejo;Cristiano Araujo
+Borbulhas de Amor;MPB;Fagner
+Paradinha;Funk;Anitta
+Pra sempre com Você;Sertanejo;Jorfe e Matheus
+Pedras que Cantam;MPB;Fagner
+Ferias de Julho;Sertanejo;Cristiano Araujo

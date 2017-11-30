@@ -1,3 +1,4 @@
-Fagner;15
-fagner;12
-zeinho;55
+Fagner;68
+Cristiano Araujo;29
+Jorge e Matheus;11
+Anitta;24
